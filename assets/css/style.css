@@ -1,1 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+/*---Google Fonts---*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"):
+  root {
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+/*---Global---*/
+body {
+  background-image: url(../images/background-2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-color: #fafafa;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/*---Header---*/
+.header-container {
+  background-image: url(../images/background-img.jpeg);
+  background-position: relative;
+  background-position: bottom;
+  background-repeat: none;
+  height: 13vh;
+  color: #fafafa;
+  padding: 10px 0;
+  border: solid 3px #fafafa;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*---Profile photo---*/
+.profile-photo img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: solid 3px #fafafa;
+}
+
+/*---H1-H2 container---*/
+.h1-h2-container {
+  text-align: center;
+  padding: 0.5% 0 0 5%;
+}
+
+/*---H1---*/
+h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+/*---Navbar---*/
+#nav-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0 3% 0;
+}
+
+/*---Navbar---*/
+i {
+  color: #fafafa;
+}
+
+.active i {
+  color: #0d1b2a;
+}
+
+.navbar-toggler {
+  background-color: #fafafa;
+  color: #0d1b2a;
+}
+
+/*---Download icon Container---*/
+.download-container {
+  margin: 1% 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*---Buttons---*/
+.btn {
+  background-image: url(../images/background-img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  border: solid 3px #fafafa;
+  transition: ease-in-out 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  border: solid 3px #fafafa;
+}
