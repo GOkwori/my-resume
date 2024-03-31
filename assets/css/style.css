@@ -10,7 +10,7 @@
 
 /*---Global---*/
 body {
-  background-image: url(../images/background-2.jpeg);
+  background-image: url(../images/#);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: fixed;
@@ -26,14 +26,12 @@ body {
 
 /*---Header---*/
 .header-container {
-  background-image: url(../images/background-img.jpeg);
-  background-position: relative;
-  background-position: bottom;
-  background-repeat: none;
+  background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77, #778da9);
   height: 13vh;
   color: #fafafa;
   padding: 10px 0;
   border: solid 3px #fafafa;
+  z-index: 1000;
 }
 
 a {
@@ -99,12 +97,10 @@ i {
 
 /*---Buttons---*/
 .btn {
-  background-image: url(../images/background-img.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  background: linear-gradient(135deg, #1b263b, #415a77, #778da9);
   border: solid 3px #fafafa;
   transition: ease-in-out 0.3s;
+  width: 200px;
 }
 
 .btn:hover {
@@ -117,10 +113,41 @@ section {
   height: 69vh;
 }
 
+/*---Button Container---*/
+.button-case {
+  margin: 5% 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 0 10%;
+  margin: 20% 0;
+}
+
+/*---Content body---*/
+.content-body {
+  width: 90%;
+  height: 600px;
+  padding: 2%;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #778da9, #fafafa);
+  opacity: 0.9;
+}
+
 /*---Footer---*/
 .footer-container {
-  background-image: url(../images/background-img.jpeg);
-  background-position: left;
+  background: linear-gradient(
+    135deg,
+    #0d1b2a,
+    #1b263b,
+    #415a77,
+    #778da9,
+    #fafafa
+  );
   height: 10vh;
   color: #fafafa;
   padding: 10px 0;
@@ -160,4 +187,9 @@ section {
   display: inline-block;
   animation: rotate3d 3s infinite linear;
   transform-style: preserve-3d;
+  transform-origin: center;
+}
+
+.social-link:hover {
+  animation-play-state: paused;
 }
