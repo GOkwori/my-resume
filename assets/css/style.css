@@ -15,6 +15,7 @@ body {
   background-repeat: no-repeat;
   background-position: fixed;
   background-color: #fafafa;
+  border: solid 3px #fafafa;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -50,13 +51,19 @@ a {
 /*---H1-H2 container---*/
 .h1-h2-container {
   text-align: center;
-  padding: 0.5% 0 0 5%;
+  padding: 0.5% 0 0 10%;
 }
 
-/*---H1---*/
+/*---Headings---*/
 h1 {
   font-size: 2.8rem;
   font-weight: 900;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -103,4 +110,38 @@ i {
 .btn:hover {
   transform: scale(1.1);
   border: solid 3px #fafafa;
+}
+
+/*---Main Body---*/
+section {
+  height: 69vh;
+}
+
+/*---Footer---*/
+.footer-container {
+  background-image: url(../images/background-img.jpeg);
+  background-position: left;
+  height: 10vh;
+  color: #fafafa;
+  padding: 10px 0;
+  border: solid 3px #fafafa;
+}
+
+.footer-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 1.5% 0 0 0;
+}
+
+/*---Social Media Icons---*/
+.footer-container i {
+  font-size: 2.2rem;
+  margin: 0 10px;
+  transition: ease-in-out 0.3s;
+}
+
+.footer-container i:hover {
+  transform: scale(1.1);
 }
