@@ -10,7 +10,7 @@
 
 /*---Global---*/
 body {
-  background-image: url(../images/#);
+  background-image: url(../images/background-4.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: fixed;
@@ -26,11 +26,13 @@ body {
 
 /*---Header---*/
 .header-container {
-  background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77, #778da9);
-  height: 13vh;
+  background-image: url(../images/background-5.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  height: 10vh;
   color: #fafafa;
-  padding: 10px 0;
-  border: solid 3px #fafafa;
+  padding: 25px 0 0 0;
   z-index: 1000;
 }
 
@@ -49,7 +51,7 @@ a {
 /*---H1-H2 container---*/
 .h1-h2-container {
   text-align: center;
-  padding: 0.5% 0 0 10%;
+  padding: 0.5% 0 0 15%;
 }
 
 /*---Headings---*/
@@ -70,15 +72,17 @@ h2 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 0 3% 0;
+  padding: 1% 0 3% 0;
 }
 
 /*---Navbar---*/
-i {
+#nav-container i {
   color: #fafafa;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
-.active i {
+#nav-container .active i {
   color: #0d1b2a;
 }
 
@@ -95,12 +99,25 @@ i {
   align-items: center;
 }
 
+.download-container i {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fafafa;
+  transition: ease-in-out 0.3s;
+}
+
 /*---Buttons---*/
 .btn {
-  background: linear-gradient(135deg, #1b263b, #415a77, #778da9);
+  background-image: url(../images/background-5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #e0e1dd;
   border: solid 3px #fafafa;
   transition: ease-in-out 0.3s;
-  width: 200px;
+  width: 270px;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .btn:hover {
@@ -110,12 +127,12 @@ i {
 
 /*---Main Body---*/
 section {
-  height: 69vh;
+  height: 74vh;
 }
 
 /*---Button Container---*/
 .button-case {
-  margin: 5% 0;
+  margin: 10% 0;
 }
 
 .button-container {
@@ -123,35 +140,64 @@ section {
   justify-content: center;
   align-items: center;
   padding: 0 0 0 10%;
-  margin: 20% 0;
+  margin-bottom: 10%;
 }
 
 /*---Content body---*/
 .content-body {
   width: 90%;
-  height: 600px;
+  height: 90%;
   padding: 2%;
   border-radius: 10px;
   backdrop-filter: blur(5px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(135deg, #778da9, #fafafa);
+  background-color:#fff;
   opacity: 0.9;
+  margin-top:5% 0;
 }
+
+#form-body {
+  height: 64.5vh;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 0 10%;
+  margin: 5% 0 ;
+  width: 90%;
+  height: auto;
+}
+
+form {
+font-size: x-large;
+font-weight: 600;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: solid 5px #0d1b2a;
+  border-radius: 5px;
+}
+
+#form-button {
+  display: flex;
+  justify-content: center;
+}
+
 
 /*---Footer---*/
 .footer-container {
-  background: linear-gradient(
-    135deg,
-    #0d1b2a,
-    #1b263b,
-    #415a77,
-    #778da9,
-    #fafafa
-  );
-  height: 10vh;
+  background-image: url(../images/background-5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 8vh;
   color: #fafafa;
   padding: 10px 0;
-  border: solid 3px #fafafa;
 }
 
 .footer-container ul {
@@ -162,11 +208,16 @@ section {
   padding: 1.5% 0 0 0;
 }
 
+
+
+
 /*---Social Media Icons---*/
 
 .footer-container i {
   font-size: 2.2rem;
   margin: 0 10px;
+  color: #fafafa;
+  transition: ease-in-out 0.3s;
 }
 
 /*--- Footer Social Media Icons Animation---*/
