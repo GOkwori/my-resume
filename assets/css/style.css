@@ -1,6 +1,5 @@
 /*---Google Fonts---*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"):
-  root {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"): root {
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -10,14 +9,16 @@
 
 /*---Global---*/
 body {
-  background-image: url(../images/background-4.png);
-  background-size: cover;
+  background-image: url(../images/background-5.jpg);
   background-repeat: no-repeat;
-  background-position: fixed;
-  background-color: #fafafa;
-  border: solid 3px #fafafa;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  border: solid 3px #fff;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  color: #fff;
   line-height: 1.5;
   height: 100vh;
   margin: 0;
@@ -27,12 +28,9 @@ body {
 
 /*---Header---*/
 .header-container {
-  background-image: url(../images/background-5.jpg);
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: cover;
+  background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
   height: 10vh;
-  color: #fafafa;
+  color: #fff;
   padding: 10px 0;
   z-index: 1000;
 }
@@ -43,10 +41,11 @@ a {
 
 /*---Profile photo---*/
 .profile-photo img {
+  background-color: #fff;
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  border: solid 3px #fafafa;
+  border: solid 3px #fff;
 }
 
 /*---H1-H2 container---*/
@@ -78,18 +77,18 @@ h2 {
 
 /*---Navbar---*/
 #nav-container i {
-  color: #fafafa;
+  color: #fff;
   font-size: 1rem;
   font-weight: 500;
 }
 
 #nav-container .active i {
-  color: #0d1b2a;
+  color: rgb(47, 48, 67);
 }
 
 .navbar-toggler {
-  background-color: #fafafa;
-  color: #0d1b2a;
+  background-color: #fff;
+  color: rgb(47, 48, 67);
 }
 
 /*---Download icon Container---*/
@@ -103,18 +102,16 @@ h2 {
 .download-container i {
   font-size: 1rem;
   font-weight: 500;
-  color: #fafafa;
+  color: #fff;
   transition: ease-in-out 0.3s;
 }
 
 /*---Buttons---*/
 .btn {
-  background-image: url(../images/background-5.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: #e0e1dd;
-  border: solid 3px #fafafa;
+  background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
+  color: #fff;
+  border: solid 3px #fff;
+  opacity: 0.9;
   transition: ease-in-out 0.3s;
   width: 210px;
   font-size: 1rem;
@@ -123,7 +120,7 @@ h2 {
 
 .btn:hover {
   transform: scale(1.1);
-  border: solid 3px #fafafa;
+  border: solid 3px #fff;
 }
 
 /*---Main Body---*/
@@ -152,9 +149,9 @@ section {
   border-radius: 10px;
   backdrop-filter: blur(5px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color:#fff;
+  background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
   opacity: 0.9;
-  margin-top:5% 0;
+  margin-top: 5% 0;
 }
 
 #form-body {
@@ -162,17 +159,20 @@ section {
 }
 
 .form-container {
+
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 0 0 10%;
-  margin: 2% 0 ;
+  margin: 2% 0;
   width: 90%
 }
 
 form {
-font-size: large;
-font-weight: 600;
+  background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
+  font-size: large;
+  font-weight: 400;
+  opacity: 0.9;
 }
 
 form input {
@@ -190,10 +190,7 @@ form input {
 
 /*---Footer---*/
 .footer-container {
-  background-image: url(../images/background-5.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left;
+  background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
   height: 8vh;
   color: #fafafa;
 }
@@ -212,7 +209,7 @@ form input {
 .footer-container i {
   font-size: 2rem;
   margin: 0 10px;
-  color: #fafafa;
+  color: #fff;
   transition: ease-in-out 0.3s;
 }
 
@@ -221,6 +218,7 @@ form input {
   from {
     transform: rotate3d(0, 1, 0, 0deg);
   }
+
   to {
     transform: rotate3d(0, 1, 0, 360deg);
   }
